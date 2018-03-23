@@ -1,5 +1,5 @@
 {
-    "name": "js-creator",
+    "name": "obj-creator",
     "version": "1.0.0",
     "description": "A object creator library with validators",
     "main": "index.js",
