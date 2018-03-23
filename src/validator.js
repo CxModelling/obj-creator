@@ -12,11 +12,11 @@ class AbsValidator {
 
     to_form() {
         return {
-            "Name": this.Name,
-            "Type": this.Type,
-            "Description": this.Description,
-            "Required": this.Required,
-            "Options": this.Options
+            Name: this.Name,
+            Type: this.Type,
+            Description: this.Description,
+            Required: this.Required,
+            Options: this.Options
         }
     }
 
@@ -27,7 +27,7 @@ class AbsValidator {
 
     check(value, resource) {
         if (value == null) {
-            throw "Null value"
+            return false
         }
         if (resource && value in resource) {
             value = resource[value]

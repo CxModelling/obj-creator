@@ -2,11 +2,13 @@ import {Workshop} from "./src/workshop";
 
 const workshops = {};
 
-export {findValidator, addValidator} from "./src/validators/validator"
 
-export default function(ws) {
+export function getWorkshop(ws) {
     if (!(ws in workshops)) {
-        workshops[ws] = new Workshop;
+        workshops[ws] = new Workshop(ws);
     } 
     return workshops[ws];
 }
+
+export {findValidator, addValidator} from "./src/validator"
+export {Creator} from "./src/creator"

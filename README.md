@@ -7,14 +7,14 @@ A object creator library with validators
 
 
 ```
-var workshop = js-creator('ObjsA');
+var workshop = creator.getWorksop("ObjsA");
 
 workshop.registor({
-    Name: 'objX',
-    Constructor,
+    Name: "objX",
+    Constructor: function(x, y) {this.X=x; this.Y=y},
     Validators: [
-        {name: x, type: 'float', required: true, options: {upper: 1, lower: 0, default: 0.5}},
-        {name: y, type: 'list', required: true}
+        {name: "x", type: "Float", required: true, options: {upper: 100, default: 0.5}},
+        {name: "y", type: "list", required: true}
     ]
 })
 
