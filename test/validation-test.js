@@ -1,5 +1,5 @@
 const tape = require("tape"),
-    creator = require("../build/js-creator");
+    creator = require("../build/obj-creator");
 
 
 tape("float number validation", function(test) {

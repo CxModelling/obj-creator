@@ -1,8 +1,8 @@
 {
     "name": "obj-creator",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "A object creator library with validators",
-    "main": "index.js",
+    "main": "./build/obj-creator.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/TimeWz667/obj-creator.git"
@@ -13,12 +13,13 @@
         "url": "https://github.com/TimeWz667/obj-creator/issues"
     },
     "homepage": "https://github.com/TimeWz667/obj-creator#readme",
-    "module": "index",
-    "jsnext:main": "index",
+    "module": "./build/obj-creator.js",
+    "jsnext:main": "./build/obj-creator.js",
     "scripts": {
         "pretest": "(if exist build rd /q /s build) && mkdir build && rollup -c",
         "test": "tape test/**/*-test.js && eslint index.js src",
-        "build": "uglifyjs -b beautify=false build/js-creator.js -c -m -o build/obj-creator.min.js"
+        "build": "uglifyjs -b beautify=false build/obj-creator.js -c -m -o build/obj-creator.min.js",
+        "prepare": "npm run build",
     },
     "devDependencies": {
         "eslint": "^4.19.0",
@@ -26,6 +27,5 @@
         "tape": "^4.9.0",
         "uglify-js-es6": "^2.8.9"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }
