@@ -5,20 +5,20 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TimeWz667/js-creator.git"
+        "url": "git+https://github.com/TimeWz667/obj-creator.git"
     },
     "author": "TimeWz667 <TimeWz667@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/TimeWz667/js-creator/issues"
+        "url": "https://github.com/TimeWz667/obj-creator/issues"
     },
-    "homepage": "https://github.com/TimeWz667/js-creator#readme",
+    "homepage": "https://github.com/TimeWz667/obj-creator#readme",
     "module": "index",
     "jsnext:main": "index",
     "scripts": {
         "pretest": "(if exist build rd /q /s build) && mkdir build && rollup -c",
         "test": "tape test/**/*-test.js && eslint index.js src",
-        "build": "uglifyjs -b beautify=false build/js-creator.js -c -m -o build/js-creator.min.js"
+        "build": "uglifyjs -b beautify=false build/js-creator.js -c -m -o build/obj-creator.min.js"
     },
     "devDependencies": {
         "eslint": "^4.19.0",
