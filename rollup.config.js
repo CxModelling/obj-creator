@@ -5,7 +5,7 @@ export default {
     input: 'index.js',
     external: dependencies,
     output: {
-        file: 'build/js-creator.js',
+        file: 'build/obj-creator.js',
         format: 'cjs'
     },
     plugins: [ ]
