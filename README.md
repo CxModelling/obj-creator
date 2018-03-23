@@ -7,7 +7,6 @@ A object creator library with validators
 
 ```
 var creator = require("obj-creator");
-
 ```
 
 
@@ -15,7 +14,6 @@ var creator = require("obj-creator");
 
 ```
 var ws = creator.getWorkshop("TestSet");
-
 ```
 
 ### Register a object factory
@@ -42,7 +40,6 @@ ws.registor(
         {name: "y", type: "String", required: true}
     ]
 )
-
 ```
 
 
@@ -51,8 +48,6 @@ ws.registor(
 
 ```
 ws.validate("objX", {x: 1, y: "StringY"});
-
-
 ```
 
 
@@ -62,14 +57,12 @@ Create directly
 ```
 ws.create("objX", [1, "StringY"]);
 ws.create("objX", {x: 1, y: "StringY"});
-
 ```
 
 Create from JSON
 ```
 ws.fromJSON({Name: "objX", Args: [1, "StringY"]});
 ws.fromJSON({Name: "objX", Args: {x: 1, y: "StringY"});
-
 ```
 
 Create with function string
@@ -78,7 +71,6 @@ ws.parse("objX(1, 'StringY')");
 
 // use keyword arguments
 ws.parse("objX(1, y='StringY')");
-
 ```
 
 
