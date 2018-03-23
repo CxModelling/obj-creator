@@ -1,4 +1,4 @@
-# js-creator
+# obj-creator
 A object creator library with validators
 
 ## Get Started
@@ -6,7 +6,7 @@ A object creator library with validators
 ### Load
 
 ```
-var creator = require("js-creator");
+var creator = require("obj-creator");
 
 ```
 
