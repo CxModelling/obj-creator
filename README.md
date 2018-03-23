@@ -13,8 +13,8 @@ workshop.registor({
     Name: 'objX',
     Constructor,
     Validators: [
-        {Name: x, Type: 'float', Required: true, Options: {upper: 1, lower: 0, default: 0.5}},
-        {Name: y, Type: 'list', Required: true}
+        {name: x, type: 'float', required: true, options: {upper: 1, lower: 0, default: 0.5}},
+        {name: y, type: 'list', required: true}
     ]
 })
 
