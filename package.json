@@ -13,8 +13,8 @@
         "url": "https://github.com/TimeWz667/obj-creator/issues"
     },
     "homepage": "https://github.com/TimeWz667/obj-creator#readme",
-    "module": "./build/obj-creator.js",
-    "jsnext:main": "./build/obj-creator.js",
+    "module": "index",
+    "jsnext:main": "index",
     "scripts": {
         "pretest": "(if exist build rd /q /s build) && mkdir build && rollup -c",
         "test": "tape test/**/*-test.js && eslint index.js src",
