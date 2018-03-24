@@ -1,6 +1,6 @@
 {
     "name": "obj-creator",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A object creator library with validators",
     "main": "./build/obj-creator.js",
     "repository": {
@@ -19,7 +19,7 @@
         "pretest": "(if exist build rd /q /s build) && mkdir build && rollup -c",
         "test": "tape test/**/*-test.js && eslint index.js src",
         "build": "uglifyjs -b beautify=false build/obj-creator.js -c -m -o build/obj-creator.min.js",
-        "prepare": "npm run build"
+        "prepublishOnly": "npm run pretest && npm run build"
     },
     "devDependencies": {
         "eslint": "^4.19.0",
