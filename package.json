@@ -1,6 +1,6 @@
 {
     "name": "obj-creator",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A object creator library with validators",
     "main": "./build/obj-creator.js",
     "repository": {
