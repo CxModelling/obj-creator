@@ -1,8 +1,9 @@
 {
     "name": "obj-creator",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A object creator library with validators",
-    "main": "./build/obj-creator.js",
+    "main": "build/obj-creator.js",
+    "unpkg": "build/obj-creator.min.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/TimeWz667/obj-creator.git"
@@ -14,7 +15,6 @@
     },
     "homepage": "https://github.com/TimeWz667/obj-creator#readme",
     "module": "index",
-    "jsnext:main": "index",
     "scripts": {
         "pretest": "(if exist build rd /q /s build) && mkdir build && rollup -c",
         "test": "tape test/**/*-test.js && eslint index.js src",
