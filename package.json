@@ -22,9 +22,9 @@
         "prepublishOnly": "npm run pretest && npm run build"
     },
     "devDependencies": {
-        "eslint": "^4.19.0",
-        "rollup": "^0.57.1",
-        "tape": "^4.9.0",
+        "eslint": "^5.16.0",
+        "rollup": ">0.57.1",
+        "tape": "^4.10.2",
         "uglify-js-es6": "^2.8.9"
     },
     "dependencies": {}
